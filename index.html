@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BELAJAR HACKER BAIK - LENGKAP</title>
+<style>
+body { background: black; color: #00ff00; font-family: monospace; padding: 15px; }
+h1 { text-align: center; font-size: 22px; }
+h2 { color: white; border-bottom: 2px solid #00ff00; padding-bottom: 5px; margin-top: 35px; }
+.kotak { border: 1px solid #00ff00; padding: 15px; margin: 12px 0; border-radius: 10px; }
+pre { background: #111; color: #00ff00; padding: 12px; overflow-x: auto; font-size: 14px; white-space: pre-wrap; border: 1px solid #333; }
+.fungsi { background: #003300; padding: 10px; border-radius: 6px; margin-top: 10px; }
+button { background: #00ff00; color: black; font-size: 18px; padding: 12px; border: none; font-weight: bold; width: 100%; margin-top: 10px; }
+.tombol-kecil { width: auto; padding: 8px 15px; font-size: 14px; margin: 5px; }
+</style>
+</head>
+<body>
+<h1>HALO! GUE CALON HACKER BAIK! [HACKER]</h1>
+<p style="text-align:center">WEB BELAJAR LENGKAP - BUKA KALO MAU BELAJAR!</p>
+<p style="text-align:center">
+<a href="index.html"><button class="tombol-kecil">GAME LEVEL 4</button></a>
+<a href="rapor.html"><button class="tombol-kecil">RAPOR LEVEL 1</button></a>
+</p>
+<hr>
+
+<div class="kotak">
+<h2>LEVEL 1 - DASAR WAJIB</h2>
+<p><b>1. Variabel = Kotak Penyimpanan</b></p>
+<pre>nama = "Budi"
+umur = 15
+print(nama)
+print(umur)</pre>
+<div class="fungsi"><b>FUNGSI:</b> Buat nyimpen data. nama nyimpen teks, umur nyimpen angka. Nanti bisa dipanggil lagi.</div>
+
+<p><b>2. if / else = Pintu Gerbang / Cek Password</b></p>
+<pre>password = input("Masukin password: ")
+if password == "rahasia":
+    print("BENER! Selamat datang BOSS!")
+else:
+    print("SALAH! Lu bukan BOSS!")</pre>
+<div class="fungsi"><b>FUNGSI:</b> Buat keputusan. Kalau bener lakuin ini, kalau salah lakuin itu. Ini fondasi LOGIN semua website!<br>
+- input() = nanya ke user<br>
+- == = apakah sama dengan?<br>
+- if = kalau bener<br>
+- else = kalau salah</div>
+
+<p><b>3. for = Ngulang Pasti (3x)</b></p>
+<pre>for percobaan in range(3):
+    print("Halo!")
+    print("Ini ke-", percobaan)</pre>
+<div class="fungsi"><b>FUNGSI:</b> Ulangi yang udah pasti jumlahnya. range(3) = 0,1,2 = 3x ulang. Cocok buat game 3x kesempatan.</div>
+
+<p><b>4. while True = Ngulang Tanpa Batas</b></p>
+<pre>import random
+angka_rahasia = random.randint(1, 10)
+while True:
+    tebakan = int(input("Tebakan lu: "))
+    if tebakan == angka_rahasia:
+        print("MENANG!")
+        break
+    elif tebakan < angka_rahasia:
+        print("KECILAN!")
+    else:
+        print("KEGEDEAN!")</pre>
+<div class="fungsi"><b>FUNGSI:</b> Ulang terus sampe break. Ini fondasi BRUTE FORCE - hacker nebak password diulang terus sampe bener!<br>
+- break = perintah BERHENTI<br>
+- elif = else if, cek kedua kalau pertama salah</div>
+
+<p><b>5. Variabel Penghitung = Skor</b></p>
+<pre>percobaan = 0
+percobaan = percobaan + 1
+print(percobaan)</pre>
+<div class="fungsi"><b>FUNGSI:</b> Buat ngitung skor. Tiap nebak tambah 1. Dari 0 jadi 1, 1 jadi 2.</div>
+</div>
+
+<div class="kotak">
+<h2>LEVEL 2 - NAIK LEVEL</h2>
+<p><b>6. List = Daftar Banyak Barang</b></p>
+<pre>teman = ["Andi", "Budi", "Cici"]
+print(teman[0])
+print(teman[1])
+teman.append("Dedi")
+print(teman)</pre>
+<div class="fungsi"><b>FUNGSI:</b> Nyimpen banyak data dalam 1 kotak. [0] itu yang pertama. append() = nambahin ke belakang.</div>
+
+<p><b>7. def = Bikin Perintah Sendiri</b></p>
+<pre>def sapa(nama):
+    print("Halo", nama)
+
+sapa("Budi")
+sapa("Andi")</pre>
+<div class="fungsi"><b>FUNGSI:</b> Bikin fungsi sendiri biar gak ngetik ulang. def = define / bikin. Tinggal panggil namanya.</div>
+
+<p><b>8. len() = Ngitung Panjang</b></p>
+<pre>password = "rahasia123"
+print(len(password))</pre>
+<div class="fungsi"><b>FUNGSI:</b> Ngitung jumlah huruf / isi list. Hacker pake ini buat cek password udah berapa karakter.</div>
+</div>
+
+<div class="kotak">
+<h2>LEVEL 3 - HTML / WEB (YANG LU LAGI PAKE!)</h2>
+<pre>&lt;h1&gt;Ini Judul Gede&lt;/h1&gt;
+&lt;p&gt;Ini tulisan biasa&lt;/p&gt;
+&lt;button onclick="tebak()"&gt;TEBAK!&lt;/button&gt;
+&lt;input type="number" placeholder="1-100"&gt;
+&lt;script&gt;
+let angka = 50;
+function tebak() {
+  alert("Lu pencet tombol!");
+}
+&lt;/script&gt;</pre>
+<div class="fungsi"><b>FUNGSI:</b><br>
+- h1 = judul gede<br>
+- p = paragraf / tulisan<br>
+- button = tombol yang bisa diklik<br>
+- input = kotak buat ketik angka<br>
+- script = tempat kode JavaScript buat bikin web hidup<br>
+- onclick = kalau diklik, jalanin fungsi itu</div>
+</div>
+
+<div class="kotak">
+<h2>LEVEL 4 - 2 ERROR YANG HARUS LU HAFAL</h2>
+<p><b>SyntaxError:</b> Typo. Kurang : atau ) . Cek baris yang ditunjuk error.</p>
+<p><b>IndentationError:</b> Spasi berantakan. Di Python spasi WAJIB sama rata.</p>
+<p><b>RUMUS SPASI SAKTI:</b><br>
+- Nempel pinggir = 0 spasi<br>
+- Di dalem while / for = 4 spasi<br>
+- Di dalem if yang di dalem while = 8 spasi</p>
+</div>
+
+<div class="kotak">
+<h2>LEVEL 5 - STRATEGI HACKER BAIK (BINARY SEARCH)</h2>
+<p>Kalau tebak angka 1-100, jangan tebak 1,2,3... lama!</p>
+<p><b>Caranya:</b> Tebak tengah dulu 50. Kalau kekecilan, tebak 75. Kalau kegedean, tebak 25. Terus bagi 2 terus. Paling 7x tebak udah ketemu!</p>
+<p>Ini yang dipake hacker & Google buat nyari data cepet!</p>
+</div>
+
+<div class="kotak">
+<h2>KAMUS HACKER BAIK</h2>
+<p>- <b>Python</b> = Bahasa buat bikin program di HP / komputer<br>
+- <b>HTML</b> = Bahasa buat bikin web<br>
+- <b>JavaScript</b> = Bahasa buat bikin web hidup / bisa diklik<br>
+- <b>Bug</b> = Error / salah di kode<br>
+- <b>Debug</b> = Benerin bug<br>
+- <b>Brute Force</b> = Nebak terus sampe bener<br>
+- <b>Login</b> = Cek password pake if</p>
+</div>
+
+<p style="text-align:center; font-weight:bold; font-size:18px;">SEMANGAT BANG! LU UDAH JADI HACKER BAIK!</p>
+<a href="index.html"><button>⬅ BALIK KE GAME</button></a>
+<a href="rapor.html"><button>LIAT RAPOR LEVEL 1</button></a>
+
+</body>
+</html>
